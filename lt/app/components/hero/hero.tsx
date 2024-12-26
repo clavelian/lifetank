@@ -9,7 +9,7 @@ function Hero() {
         </video>
       </div>
       <div className="">
-        <span className="mix-blend-difference absolute font-extrabold text-6xl sm:top-[20rem] sm:right-40 mobile:top-[15rem] top-40 left-6 px-2">
+        <span className="mix-blend-difference absolute font-extrabold text-6xl mobile:top-[15rem] exclude:top-[18rem] exclude:left-20 exclude:right-20 top-40 left-6 px-2">
           Bring the serenity of a forest to your desk.
         </span>
       </div>
