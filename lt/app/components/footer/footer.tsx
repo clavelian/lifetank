@@ -9,7 +9,7 @@ const ResponsiveFooter = () => {
     <footer className="bg-transparent boxShadow rounded-xl w-full p-6 lg:p-9 absolute bottom-0">
       <div className="flex justify-center gap-[30px] flex-wrap w-full sm:px-32">
         <div className="flex items-center flex-wrap gap-[2rem] text-text">
-          <a className="text-[1.5rem] p-1.5 cursor-pointer rounded-full text-white hover:scale-150 transition-all duration-300">
+          <a className="p-1.5 cursor-pointer rounded-full text-white hover:scale-150 transition-all duration-300">
             <Image
               src={Fb}
               width={30}
@@ -18,30 +18,30 @@ const ResponsiveFooter = () => {
               className=""
             />
           </a>
-          <a className="text-[1.5rem] p-1.5 cursor-pointer rounded-full text-white hover:scale-150 transition-all duration-300">
+          <a className="p-1.5 cursor-pointer rounded-full text-white hover:scale-150 transition-all duration-300">
             <Image
               src={Tk}
               width={30}
               height={30}
-              alt="facebook icon"
+              alt="tiktok icon"
               className=""
             />
           </a>
-          <a className="text-[1.5rem] p-1.5 cursor-pointer rounded-full text-white hover:scale-150 transition-all duration-300">
+          <a className="p-1.5 cursor-pointer rounded-full text-white hover:scale-150 transition-all duration-300">
             <Image
               src={Ig}
               width={30}
               height={30}
-              alt="facebook icon"
+              alt="instagram icon"
               className=""
             />
           </a>
-          <a className="text-[1.5rem] p-1.5 cursor-pointer rounded-full text-white hover:scale-150 transition-all duration-300">
+          <a className="p-1.5 cursor-pointer rounded-full text-white hover:scale-150 transition-all duration-300">
             <Image
               src={Tw}
               width={30}
               height={30}
-              alt="facebook icon"
+              alt="twitter icon"
               className=""
             />
           </a>
