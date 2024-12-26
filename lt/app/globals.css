@@ -19,3 +19,26 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(110%) brightness(90%) invert(5%);
+}
+.main {
+  width: 100%;
+  height: 100vh;
+}
+nav {
+  /* background: linear-gradient(to bottom, hsl(0deg 0% 0%) 0%, transparent 0%);*/
+  backdrop-filter: blur(20px);
+}
+ul li {
+  -webkit-text-stroke: 0.3px black;
+  color: white;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 0.5px -1px 0 #000,
+    -1px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+  /* color: white;
+  -webkit-text-stroke: 0.1px #f8f8f8;
+  text-shadow: 0px 1px 4px #23430c; */
+}
