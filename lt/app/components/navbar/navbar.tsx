@@ -5,11 +5,9 @@ import Image from "next/image";
 import Logo from "@/public/ltph.png";
 import Plant from "@/public/plant.svg";
 
-// import { PiPlantDuotone } from "react-icons/pi";
-
 const ResponsiveNavbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState(0);
 
   return (
     <nav className="flex items-center w-full rounded-full py-2 justify-center mobile:justify-evenly">
@@ -18,11 +16,12 @@ const ResponsiveNavbar = () => {
       <ul className="flex justify-center items-center p-1 relative mobile:hidden font-semibold pl-14">
         <div
           className={`${
+            (activeTab === 0 && "-translate-y-[5rem]") ||
             (activeTab === 1 && "translate-x-[-146px]") ||
             (activeTab === 2 && "translate-x-[-50px]") ||
             (activeTab === 3 && "translate-x-[41px]") ||
             (activeTab === 4 && "!w-[100px] translate-x-[142px]")
-          } !bg-[#3B9DF8] absolute !text-[#fff] h-[85%] w-[95px] transition duration-700 rounded-full border-transparent cursor-pointer`}
+          } !bg-[#3B9DF8] absolute !text-[#fff] h-[85%] w-[95px] transition duration-500 rounded-full border-transparent cursor-pointer`}
         ></div>
         <li
           className={`${

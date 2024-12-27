@@ -18,7 +18,7 @@ export default {
       // => @media (min-width: 1024px and max-width: 1279px) { ... }
 
       'wscreen': {'min': '1280px'},
-
+      
       'exclude': {'min':'768px'}
     },
     extend: {
