@@ -19,7 +19,9 @@ export default {
 
       'wscreen': {'min': '1280px'},
       
-      'exclude': {'min':'768px'}
+      'exclude': {'min':'768px'},
+      //height
+      'zxc': {'raw': '(max-height: 400px)' }
     },
     extend: {
       colors: {
