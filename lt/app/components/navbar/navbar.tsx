@@ -58,9 +58,11 @@ const ResponsiveNavbar = () => {
           <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#fafafa] transition-all duration-300 before:left-0 text-[#ffffffc0] cursor-pointer">
             Gallery
           </li>
-          <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#fafafa] transition-all duration-300 before:left-0 text-green-300 z-20   border-transparent cursor-pointer">
-            Shop
-          </li>
+          <Link href="/shop">
+            <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#fafafa] transition-all duration-300 before:left-0 text-green-300 z-20   border-transparent cursor-pointer">
+              Shop
+            </li>
+          </Link>
           <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#fafafa] transition-all duration-300 before:left-0 text-green-300 z-20   border-transparent cursor-pointer">
             About
           </li>
