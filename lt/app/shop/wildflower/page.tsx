@@ -24,12 +24,15 @@ const wFlower = () => {
           width={300}
           className="rounded-xl exclude:hidden"
         />
-        <div className="w-[20rem] p-5">
+        <div className="w-[20rem] pl-5">
           <div className="font-extrabold text-5xl pb-3">WildFlower</div>
           <div className="text-2xl pb-10">₱ 10,000</div>
           <div className="">
             Experience eternal freshness, endless peace, and fantastic colors to
             make you super relax and creative.
+          </div>
+          <div className="text-white pt-10 text-sm font-extralight">
+            W9.6 inch X H11.8 inch X L9.6 inch
           </div>
         </div>
       </main>
