@@ -1,5 +1,6 @@
 import ResponsiveNavbar from "@/app/components/navbar/navbar";
 import ResponsiveFooter from "@/app/components/footer/footer";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import wildFlower from "@/public/1.jpg";
 
@@ -34,6 +35,7 @@ const wFlower = () => {
           <div className="text-white pt-10 text-sm font-extralight">
             W9.6 inch X H11.8 inch X L9.6 inch
           </div>
+          <Button>Shop now</Button>
         </div>
       </main>
       <footer className="mobile:hidden fixed right-0 bottom-0 w-full">
