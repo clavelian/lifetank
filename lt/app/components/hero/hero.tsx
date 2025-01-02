@@ -9,8 +9,9 @@ function Hero() {
         </video>
       </div>
       <div className="">
-        <span className="mix-blend-difference absolute font-extrabold text-6xl mobile:top-[15rem] exclude:top-[18rem] exclude:left-20 exclude:right-20 top-40 left-6 px-2 mobile:px-5">
+        <span className="hero text-white absolute font-extrabold text-6xl mobile:top-[15rem] exclude:top-[18rem] exclude:left-20 exclude:right-20 top-40 left-6 px-2 mobile:px-5">
           Bring the serenity of a forest to your desk.
+          {/* mix-blend-difference */}
         </span>
       </div>
       <nav className="absolute w-full top-0">

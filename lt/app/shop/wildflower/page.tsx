@@ -16,23 +16,30 @@ const wFlower = () => {
           alt="wildflower"
           height={500}
           width={500}
-          className="rounded-xl mobile:hidden"
+          className="rounded-xl mobile:hidden tablet:hidden"
+        />
+        <Image
+          src={wildFlower}
+          alt="wildflower"
+          height={400}
+          width={400}
+          className="rounded-xl mobile:hidden smscreen:hidden wscreen:hidden"
         />
         <Image
           src={wildFlower}
           alt="wildflower"
           height={300}
           width={300}
-          className="rounded-xl exclude:hidden"
+          className="rounded-xl tablet:hidden  smscreen:hidden wscreen:hidden"
         />
         <div className="w-[20rem] pl-5">
-          <div className="font-extrabold text-5xl pb-3">WildFlower</div>
-          <div className="text-2xl pb-10">₱ 10,000</div>
+          <div className="font-extrabold text-5xl py-2">WildFlower</div>
+          <div className="text-2xl pb-8">₱ 10,000</div>
           <div className="">
             Experience eternal freshness, endless peace, and fantastic colors to
             make you super relax and creative.
           </div>
-          <div className="text-white pt-10 text-sm font-extralight">
+          <div className="py-8 text-sm font-extralight">
             W9.6 inch X H11.8 inch X L9.6 inch
           </div>
           <Button>Shop now</Button>
