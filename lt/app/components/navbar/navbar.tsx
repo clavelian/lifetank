@@ -10,7 +10,7 @@ const ResponsiveNavbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (
-    <nav className="flex items-center w-full rounded-full py-2 justify-center mobile:justify-evenly">
+    <nav className="flex items-center py-2 justify-center mobile:justify-evenly">
       <Link href="/">
         <Image src={Logo} alt="Logo" width={130} height={130} className="" />
       </Link>
