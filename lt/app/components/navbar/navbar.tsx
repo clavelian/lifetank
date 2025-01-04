@@ -59,11 +59,11 @@ const ResponsiveNavbar = () => {
           <SheetHeader>
             <SheetTitle></SheetTitle>
             <SheetDescription className="">
-              <ul className="font-semibold text-3xl py-[13rem]">
-                <li className="py-8">Get Started</li>
-                <li className="py-8">Shop</li>
-                <li className="py-8">Contact</li>
-              </ul>
+              <div className="font-semibold text-3xl py-[13rem] flex-col">
+                <div className="font-normal font-sans py-8">Get Started</div>
+                <div className="font-normal font-sans py-8">Shop</div>
+                <div className="font-normal font-sans py-8">Contact</div>
+              </div>
             </SheetDescription>
           </SheetHeader>
         </SheetContent>
