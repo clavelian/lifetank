@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/ltph.png";
 import Plant from "@/public/plant.svg";
+import { NavMenu } from "./navmenu";
 
 import {
   Sheet,
@@ -21,7 +22,9 @@ const ResponsiveNavbar = () => {
         <Image src={Logo} alt="Logo" width={130} height={130} className="" />
       </Link>
 
-      <ul className="flex justify-center items-center p-1 relative mobile:hidden font-semibold pl-14">
+      <NavMenu />
+
+      {/* <ul className="flex justify-center items-center p-1 relative mobile:hidden font-semibold pl-14">
         <Link href="/gallery">
           <li className="px-6 py-2 before:w-0 hover:before:w-full before:bg-[#3b9df8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:bottom-[-2px] before:left-0 text-[#ffffffc0] hover:text-white duration-300">
             Gallery
@@ -42,8 +45,9 @@ const ResponsiveNavbar = () => {
             Contact
           </li>
         </Link>
-      </ul>
+      </ul> */}
 
+      {/* For Mobile Users / small screen */}
       <Sheet>
         <SheetTrigger>
           <Image
@@ -59,11 +63,13 @@ const ResponsiveNavbar = () => {
           <SheetHeader>
             <SheetTitle></SheetTitle>
             <SheetDescription className="">
-              <div className="font-semibold text-3xl py-[13rem] flex-col">
-                <div className="font-normal font-sans py-8">Get Started</div>
-                <div className="font-normal font-sans py-8">Shop</div>
-                <div className="font-normal font-sans py-8">Contact</div>
-              </div>
+              <>
+                <div className="font-semibold text-3xl py-[13rem] flex-col">
+                  <div className="font-normal font-sans py-8">Get Started</div>
+                  <div className="font-normal font-sans py-8">Shop</div>
+                  <div className="font-normal font-sans py-8">Contact</div>
+                </div>
+              </>
             </SheetDescription>
           </SheetHeader>
         </SheetContent>
