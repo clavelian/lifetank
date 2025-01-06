@@ -11,7 +11,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
+  // navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
 const components: { title: string; href: string; description: string }[] = [
@@ -37,56 +37,60 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavMenu() {
   return (
-    <NavigationMenu className="mobile:hidden flex justify-center items-center p-1 pl-14">
-      <NavigationMenuList>
-        {/* get started */}
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 tablet:w-[400px] smscreen:w-[500px] smscreen:grid-cols-[.75fr_1fr]">
-              <ListItem href="/gallery" title="Gallery">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus.
-              </ListItem>
-              <ListItem href="/about" title="About">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                esse.
-              </ListItem>
-              <ListItem href="/" title="Maintenance Guides">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-
-        {/* shop */}
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>ꜱʜᴏᴘ</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 tablet:w-[400px] tablet:grid-cols-1 smscreen:w-[600px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
+    <>
+      <NavigationMenu className="mobile:hidden flex justify-center items-center p-1 pl-14">
+        <NavigationMenuList>
+          {/* get started */}
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid gap-3 p-4 tablet:w-[400px] smscreen:w-[500px] smscreen:grid-cols-[.75fr_1fr]">
+                <ListItem href="/gallery" title="Gallery">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus.
                 </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
+                <ListItem href="/about" title="About">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat esse.
+                </ListItem>
+                <ListItem href="/" title="Maintenance Guides">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </ListItem>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
 
-        {/* contact */}
-        <NavigationMenuItem>
-          <Link href="/contact" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              ᴄᴏɴᴛᴀᴄᴛ
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+          {/* shop */}
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>ꜱʜᴏᴘ</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid w-[400px] gap-3 p-4 tablet:w-[400px] tablet:grid-cols-1 smscreen:w-[600px] ">
+                {components.map((component) => (
+                  <ListItem
+                    key={component.title}
+                    title={component.title}
+                    href={component.href}
+                  >
+                    {component.description}
+                  </ListItem>
+                ))}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+
+          {/* contact */}
+        </NavigationMenuList>
+      </NavigationMenu>
+      <button className="relative inline-flex items-center justify-center px-4 py-1.5 overflow-hidden font-medium transition duration-300 ease-out border-2 rounded-lg group bg-slate-600">
+        <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-slate-600 group-hover:translate-x-0 ease">
+          ❤️
+        </span>
+        <span className="absolute flex items-center justify-center w-full h-full transition-all duration-300 transform group-hover:translate-x-full ease font-bold text-sm text-white">
+          ᴄᴏɴᴛᴀᴄᴛ
+        </span>
+        <span className="relative invisible">ᴄᴏɴᴛᴀᴄᴛ</span>
+      </button>
+    </>
   );
 }
 

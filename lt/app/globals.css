@@ -23,7 +23,7 @@ video {
 }
 nav {
   /* background: linear-gradient(to bottom, hsl(0deg 0% 0%) 0%, transparent 0%);*/
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
 }
 /* ul li {
   -webkit-text-stroke: 0.3px black;
