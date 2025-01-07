@@ -42,7 +42,9 @@ export function NavMenu() {
         <NavigationMenuList>
           {/* get started */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger>ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="navMenu">
+              ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-4 tablet:w-[400px] smscreen:w-[500px] smscreen:grid-cols-[.75fr_1fr]">
                 <ListItem href="/gallery" title="Gallery">
@@ -62,7 +64,9 @@ export function NavMenu() {
 
           {/* shop */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger>ꜱʜᴏᴘ</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="navMenu">
+              ꜱʜᴏᴘ
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 tablet:w-[400px] tablet:grid-cols-1 smscreen:w-[600px] ">
                 {components.map((component) => (
@@ -83,11 +87,11 @@ export function NavMenu() {
       </NavigationMenu>
 
       <Link href="/contact">
-        <button className="relative inline-flex items-center justify-center px-4 py-1.5 overflow-hidden font-medium transition duration-300 ease-out border-2 rounded-lg group bg-slate-600">
-          <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-slate-600 group-hover:translate-x-0 ease">
+        <button className="relative inline-flex items-center justify-center px-4 py-1.5 overflow-hidden font-medium transition duration-300 ease-out rounded-xl group mobile:hidden navMenu">
+          <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full group-hover:translate-x-0 ease">
             ❤️
           </span>
-          <span className="absolute flex items-center justify-center w-full h-full transition-all duration-300 transform group-hover:translate-x-full ease font-bold text-sm text-white">
+          <span className="absolute flex items-center justify-center w-full h-full transition-all duration-300 transform group-hover:translate-x-full ease font-bold text-md text-white">
             ᴄᴏɴᴛᴀᴄᴛ
           </span>
           <span className="relative invisible">ᴄᴏɴᴛᴀᴄᴛ</span>

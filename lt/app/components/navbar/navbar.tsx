@@ -62,13 +62,21 @@ const ResponsiveNavbar = () => {
         <SheetContent>
           <SheetHeader>
             <SheetTitle></SheetTitle>
-            <SheetDescription className="">
+            <SheetDescription className="flex items-center justify-center mobileNav">
               <>
-                <div className="font-semibold text-3xl py-[13rem] flex-col">
-                  <div className="font-normal font-sans py-8">Get Started</div>
-                  <div className="font-normal font-sans py-8">Shop</div>
-                  <div className="font-normal font-sans py-8">Contact</div>
-                </div>
+                <span className="font-semibold text-3xl py-[13rem]">
+                  <Link href="/">
+                    <strong className="font-semibold py-8 flex justify-center">
+                      ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ
+                    </strong>
+                  </Link>
+                  <strong className="font-semibold py-8 flex justify-center">
+                    ꜱʜᴏᴘ
+                  </strong>
+                  <strong className="font-semibold py-8 flex justify-center">
+                    ᴄᴏɴᴛᴀᴄᴛ
+                  </strong>
+                </span>
               </>
             </SheetDescription>
           </SheetHeader>
