@@ -42,7 +42,9 @@ const wFlower = () => {
           <div className="py-8 text-sm font-extralight">
             W9.6 inch X H11.8 inch X L9.6 inch
           </div>
-          <Button>Shop now</Button>
+          <div className="flex items-start justify-start">
+            <Button className="font-bold text-md">Shop now</Button>
+          </div>
         </div>
       </main>
       <footer className="mobile:hidden fixed right-0 bottom-0 w-full">
