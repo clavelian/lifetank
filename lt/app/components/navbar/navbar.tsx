@@ -17,9 +17,15 @@ import {
 
 const ResponsiveNavbar = () => {
   return (
-    <nav className="flex items-center py-4 justify-center mobile:justify-evenly">
+    <nav className="flex items-center py-3 justify-center mobile:justify-evenly">
       <Link href="/">
-        <Image src={Logo} alt="Logo" width={130} height={130} className="" />
+        <Image
+          src={Logo}
+          alt="Logo"
+          width={130}
+          height={130}
+          className="absolute top-3 left-9"
+        />
       </Link>
 
       <NavMenu />
@@ -55,7 +61,7 @@ const ResponsiveNavbar = () => {
             alt="plant"
             height={30}
             width={30}
-            className="text-[1.9rem] mr-0 cursor-pointer exclude:hidden flex"
+            className="absolute top-5 mr-0 cursor-pointer exclude:hidden flex"
           />
         </SheetTrigger>
 
