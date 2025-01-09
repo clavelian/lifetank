@@ -68,7 +68,7 @@ export function NavMenu() {
               ꜱʜᴏᴘ
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 tablet:w-[400px] tablet:grid-cols-1 smscreen:w-[600px] ">
+              <ul className="grid w-[400px] gap-3 py-5 tablet:w-[600px] tablet:grid-cols-2 smscreen:w-[600px] ">
                 {components.map((component) => (
                   <ListItem
                     key={component.title}
