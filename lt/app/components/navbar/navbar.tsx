@@ -17,35 +17,18 @@ import {
 
 const ResponsiveNavbar = () => {
   return (
-    <nav className="flex items-center py-4 justify-center mobile:justify-evenly">
+    <nav className="flex items-center py-3 justify-center mobile:justify-evenly">
       <Link href="/">
-        <Image src={Logo} alt="Logo" width={130} height={130} className="" />
+        <Image
+          src={Logo}
+          alt="Logo"
+          width={130}
+          height={130}
+          className="absolute top-3 wscreen:left-[20rem] smscreen:left-[15rem] tablet:left-[8rem] mobile:left-[4rem]"
+        />
       </Link>
 
       <NavMenu />
-
-      {/* <ul className="flex justify-center items-center p-1 relative mobile:hidden font-semibold pl-14">
-        <Link href="/gallery">
-          <li className="px-6 py-2 before:w-0 hover:before:w-full before:bg-[#3b9df8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:bottom-[-2px] before:left-0 text-[#ffffffc0] hover:text-white duration-300">
-            Gallery
-          </li>
-        </Link>
-        <Link href="/shop">
-          <li className="px-6 py-2 before:w-0 hover:before:w-full before:bg-[#3b9df8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:bottom-[-2px] before:left-0 text-[#ffffffc0] hover:text-white duration-300">
-            Shop
-          </li>
-        </Link>
-        <Link href="/about">
-          <li className="px-6 py-2 before:w-0 hover:before:w-full before:bg-[#3b9df8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:bottom-[-2px] before:left-0 text-[#ffffffc0] hover:text-white duration-300">
-            About
-          </li>
-        </Link>
-        <Link href="/contact">
-          <li className="px-6 py-2 before:w-0 hover:before:w-full before:bg-[#3b9df8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:bottom-[-2px] before:left-0 text-[#ffffffc0] hover:text-white duration-300">
-            Contact
-          </li>
-        </Link>
-      </ul> */}
 
       {/* For Mobile Users / small screen */}
       <Sheet>
@@ -55,7 +38,7 @@ const ResponsiveNavbar = () => {
             alt="plant"
             height={30}
             width={30}
-            className="text-[1.9rem] mr-0 cursor-pointer exclude:hidden flex"
+            className="absolute top-5 ml-0 mobile:right-[4rem] cursor-pointer exclude:hidden flex"
           />
         </SheetTrigger>
 
@@ -70,9 +53,11 @@ const ResponsiveNavbar = () => {
                       ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ
                     </strong>
                   </Link>
-                  <strong className="font-semibold py-8 flex justify-center">
-                    ꜱʜᴏᴘ
-                  </strong>
+                  <Link href="/shop">
+                    <strong className="font-semibold py-8 flex justify-center">
+                      ꜱʜᴏᴘ
+                    </strong>
+                  </Link>
                   <strong className="font-semibold py-8 flex justify-center">
                     ᴄᴏɴᴛᴀᴄᴛ
                   </strong>

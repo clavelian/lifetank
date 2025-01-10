@@ -29,7 +29,7 @@ export default {
   			min: '768px'
   		},
   		zxc: {
-  			raw: '(max-height: 400px)'
+  			raw: '(max-height: 400px) and (max-width: 670px)'
   		}
   	},
   	extend: {
