@@ -24,7 +24,7 @@ const ResponsiveNavbar = () => {
           alt="Logo"
           width={130}
           height={130}
-          className="absolute top-3 wscreen:left-[20rem] smscreen:left-[15rem] tablet:left-[8rem] mobile:left-[7rem]"
+          className="absolute top-3 wscreen:left-[20rem] smscreen:left-[15rem] tablet:left-[8rem] mobile:left-[4rem]"
         />
       </Link>
 
@@ -38,7 +38,7 @@ const ResponsiveNavbar = () => {
             alt="plant"
             height={30}
             width={30}
-            className="absolute top-5 ml-0 mobile:right-[7rem] cursor-pointer exclude:hidden flex"
+            className="absolute top-5 ml-0 mobile:right-[4rem] cursor-pointer exclude:hidden flex"
           />
         </SheetTrigger>
 
@@ -53,9 +53,11 @@ const ResponsiveNavbar = () => {
                       ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ
                     </strong>
                   </Link>
-                  <strong className="font-semibold py-8 flex justify-center">
-                    ꜱʜᴏᴘ
-                  </strong>
+                  <Link href="/shop">
+                    <strong className="font-semibold py-8 flex justify-center">
+                      ꜱʜᴏᴘ
+                    </strong>
+                  </Link>
                   <strong className="font-semibold py-8 flex justify-center">
                     ᴄᴏɴᴛᴀᴄᴛ
                   </strong>
