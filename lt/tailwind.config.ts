@@ -16,10 +16,10 @@ export default {
   		},
   		tablet: {
   			min: '768px',
-  			max: '1023px'
+  			max: '1024px'
   		},
   		smscreen: {
-  			min: '1024px',
+  			min: '1025px',
   			max: '1279px'
   		},
   		wscreen: {
@@ -29,7 +29,8 @@ export default {
   			min: '768px'
   		},
   		zxc: {
-  			raw: '(max-height: 400px) and (max-width: 670px)'
+  			raw: '(max-height: 500px) and (max-width: 950px)'
+			// old: h-400 w-670
   		}
   	},
   	extend: {
