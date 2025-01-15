@@ -30,7 +30,6 @@ export default {
   		},
   		zxc: {
   			raw: '(max-height: 500px) and (max-width: 950px)'
-			// old: h-400 w-670
   		}
   	},
   	extend: {
@@ -83,5 +82,5 @@ export default {
   		}
   	}
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [tailwindcssAnimate, require("tailwindcss-animate")],
 } satisfies Config;
