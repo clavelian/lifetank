@@ -1,76 +1,90 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/ltph.png";
 import Plant from "@/public/plant.svg";
+import { NavMenu } from "./navmenu";
+
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const ResponsiveNavbar = () => {
-  const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
-
   return (
-    <nav className="flex items-center py-2 justify-center mobile:justify-evenly">
+    <nav className="flex items-center py-3 justify-center mobile:justify-evenly">
       <Link href="/">
-        <Image src={Logo} alt="Logo" width={130} height={130} className="" />
+        {/* sm and wscreen */}
+        <Image
+          src={Logo}
+          alt="Logo"
+          width={130}
+          height={130}
+          className="absolute top-3 wscreen:left-[20rem] smscreen:left-[15rem] tablet:left-[5rem] tablet:hidden mobile:hidden"
+        />
+        {/* tablet */}
+        <Image
+          src={Logo}
+          alt="Logo"
+          width={100}
+          height={100}
+          className="absolute top-3 tablet:left-[8rem] wscreen:hidden smscreen:hidden mobile:hidden"
+        />
+        {/* mobile */}
+        <Image
+          src={Logo}
+          alt="Logo"
+          width={80}
+          height={80}
+          className="absolute top-5 mobile:left-[3.5rem] wscreen:hidden smscreen:hidden tablet:hidden"
+        />
       </Link>
+      {/* tablet */}
 
-      <ul className="flex justify-center items-center p-1 relative mobile:hidden font-semibold pl-14">
-        <Link href="/gallery">
-          <li className="px-6 py-2 before:w-0 hover:before:w-full before:bg-[#3b9df8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:bottom-[-2px] before:left-0 text-[#ffffffc0] hover:text-white duration-300">
-            Gallery
-          </li>
-        </Link>
-        <Link href="/shop">
-          <li className="px-6 py-2 before:w-0 hover:before:w-full before:bg-[#3b9df8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:bottom-[-2px] before:left-0 text-[#ffffffc0] hover:text-white duration-300">
-            Shop
-          </li>
-        </Link>
-        <Link href="/about">
-          <li className="px-6 py-2 before:w-0 hover:before:w-full before:bg-[#3b9df8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:bottom-[-2px] before:left-0 text-[#ffffffc0] hover:text-white duration-300">
-            About
-          </li>
-        </Link>
-        <Link href="/contact">
-          <li className="px-6 py-2 before:w-0 hover:before:w-full before:bg-[#3b9df8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:bottom-[-2px] before:left-0 text-[#ffffffc0] hover:text-white duration-300">
-            Contact
-          </li>
-        </Link>
-      </ul>
+      <NavMenu />
 
-      <Image
-        src={Plant}
-        alt="plant"
-        height={30}
-        width={30}
-        className="text-[1.9rem] mr-0 cursor-pointer exclude:hidden flex text-green-300"
-        onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}
-      />
+      {/* For Mobile Users / small screen */}
+      <Sheet>
+        <SheetTrigger>
+          <Image
+            src={Plant}
+            alt="plant"
+            height={25}
+            width={25}
+            className="absolute top-6 ml-0 right-16 cursor-pointer exclude:hidden flex"
+          />
+        </SheetTrigger>
 
-      <aside
-        className={` ${
-          mobileSidebarOpen
-            ? "translate-x-0 opacity-100 z-20"
-            : "translate-x-0 opacity-0 z-[-1]"
-        } lg:hidden p-4 text-center absolute top-[65px] right-0 w-full rounded-md transition-all duration-300`}
-      >
-        <ul className="items-center gap-28 mobile:gap-[3.5rem] text-[1.2rem] flex justify-center pt-5">
-          <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#fafafa] transition-all duration-300 before:left-0 text-[#ffffffc0] cursor-pointer">
-            Gallery
-          </li>
-          <Link href="/shop">
-            <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#fafafa] transition-all duration-300 before:left-0 text-green-300 z-20   border-transparent cursor-pointer">
-              Shop
-            </li>
-          </Link>
-          <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#fafafa] transition-all duration-300 before:left-0 text-green-300 z-20   border-transparent cursor-pointer">
-            About
-          </li>
-          <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#fafafa] transition-all duration-300 before:left-0 text-green-300 z-20   border-transparent cursor-pointer">
-            Contact
-          </li>
-        </ul>
-      </aside>
+        <SheetContent>
+          <SheetHeader>
+            <SheetTitle></SheetTitle>
+            <SheetDescription className="flex items-center justify-center mobileNav">
+              <>
+                <span className="font-semibold text-3xl py-[13rem]">
+                  <Link href="/">
+                    <strong className="font-semibold py-8 flex justify-center">
+                      ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ
+                    </strong>
+                  </Link>
+                  <Link href="/shop">
+                    <strong className="font-semibold py-8 flex justify-center">
+                      ꜱʜᴏᴘ
+                    </strong>
+                  </Link>
+                  <strong className="font-semibold py-8 flex justify-center">
+                    ᴄᴏɴᴛᴀᴄᴛ
+                  </strong>
+                </span>
+              </>
+            </SheetDescription>
+          </SheetHeader>
+        </SheetContent>
+      </Sheet>
     </nav>
   );
 };
