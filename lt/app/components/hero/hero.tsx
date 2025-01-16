@@ -1,3 +1,4 @@
+import { FloatingDockMenu } from "../navbar/floatingDockMenu";
 import ResponsiveNavbar from "@/app/components/navbar/navbar";
 
 function Hero() {
@@ -15,6 +16,7 @@ function Hero() {
       </div>
       <nav className="absolute w-full top-0">
         <ResponsiveNavbar />
+        <FloatingDockMenu />
       </nav>
     </>
   );

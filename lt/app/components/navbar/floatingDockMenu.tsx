@@ -1,3 +1,6 @@
+"use client";
+
+import PlantLogo from "@/public/plant.svg";
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
@@ -10,7 +13,7 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 
-export function FloatingDockDemo() {
+export function FloatingDockMenu() {
   const links = [
     {
       title: "Home",
@@ -37,12 +40,7 @@ export function FloatingDockDemo() {
     {
       title: "Aceternity UI",
       icon: (
-        <Image
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
+        <Image src={PlantLogo} width={20} height={20} alt="Aceternity Logo" />
       ),
       href: "#",
     },
@@ -72,7 +70,7 @@ export function FloatingDockDemo() {
   return (
     <div className="flex items-center justify-center h-[35rem] w-full">
       <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
+        mobileClassName="" // only for demo, remove for production
         items={links}
       />
     </div>
