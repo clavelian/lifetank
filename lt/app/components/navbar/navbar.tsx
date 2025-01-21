@@ -39,9 +39,9 @@ const ResponsiveNavbar = () => {
         <Image
           src={Logo}
           alt="Logo"
-          width={80}
-          height={80}
-          className="absolute top-5 mobile:left-[3.5rem] wscreen:hidden smscreen:hidden tablet:hidden"
+          width={75}
+          height={75}
+          className="absolute top-7 mobile:left-[2.5rem] wscreen:hidden smscreen:hidden tablet:hidden"
         />
       </Link>
       {/* tablet */}
@@ -56,7 +56,7 @@ const ResponsiveNavbar = () => {
             alt="plant"
             height={25}
             width={25}
-            className="absolute top-6 ml-0 right-16 cursor-pointer exclude:hidden flex"
+            className="absolute top-[1.6rem] ml-0 right-20 cursor-pointer exclude:hidden flex"
           />
         </SheetTrigger>
 
