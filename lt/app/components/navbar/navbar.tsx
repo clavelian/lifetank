@@ -3,17 +3,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/ltph.png";
-import Plant from "@/public/plant.svg";
+// import Plant from "@/public/plant.svg";
 import { NavMenu } from "./navmenu";
 
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+// import {
+//   Sheet,
+//   SheetContent,
+//   SheetDescription,
+//   SheetHeader,
+//   SheetTitle,
+//   SheetTrigger,
+// } from "@/components/ui/sheet";
 
 const ResponsiveNavbar = () => {
   return (
@@ -49,7 +49,7 @@ const ResponsiveNavbar = () => {
       <NavMenu />
 
       {/* For Mobile Users / small screen */}
-      <Sheet>
+      {/* <Sheet>
         <SheetTrigger>
           <Image
             src={Plant}
@@ -78,13 +78,13 @@ const ResponsiveNavbar = () => {
                   </Link>
                   <strong className="font-semibold py-8 flex justify-center">
                     ᴄᴏɴᴛᴀᴄᴛ
-                  </strong>
+                  </strong>f
                 </span>
               </>
             </SheetDescription>
           </SheetHeader>
         </SheetContent>
-      </Sheet>
+      </Sheet> */}
     </nav>
   );
 };
