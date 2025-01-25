@@ -46,7 +46,7 @@ const ResponsiveNavbar = () => {
       </Link>
       {/* tablet */}
       <NavMenu />
-
+      <span className="exclude:hidden absolute right-[4rem] top-[1.5rem]"></span>
       {/* For Mobile Users / small screen */}
       {/* <Sheet>
         <SheetTrigger>
