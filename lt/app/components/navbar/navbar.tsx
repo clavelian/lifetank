@@ -45,7 +45,6 @@ const ResponsiveNavbar = () => {
         />
       </Link>
       {/* tablet */}
-
       <NavMenu />
 
       {/* For Mobile Users / small screen */}
