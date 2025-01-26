@@ -33,20 +33,20 @@ const ResponsiveNavbar = () => {
           alt="Logo"
           width={100}
           height={100}
-          className="absolute top-3 tablet:left-[8rem] wscreen:hidden smscreen:hidden mobile:hidden"
+          className="absolute top-4 tablet:left-[8rem] wscreen:hidden smscreen:hidden mobile:hidden"
         />
         {/* mobile */}
         <Image
           src={Logo}
           alt="Logo"
-          width={75}
-          height={75}
+          width={80}
+          height={80}
           className="absolute top-7 mobile:left-[2.5rem] wscreen:hidden smscreen:hidden tablet:hidden"
         />
       </Link>
       {/* tablet */}
       <NavMenu />
-
+      <span className="exclude:hidden absolute right-[4rem] top-[1.5rem]"></span>
       {/* For Mobile Users / small screen */}
       {/* <Sheet>
         <SheetTrigger>

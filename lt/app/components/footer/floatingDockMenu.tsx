@@ -1,32 +1,21 @@
 "use client";
 
-import PlantLogo from "@/public/plant.svg";
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-  IconBrandGithub,
+  IconShoppingCart,
   IconBrandX,
   IconExchange,
-  IconHome,
   IconNewSection,
-  IconTerminal2,
 } from "@tabler/icons-react";
-import Image from "next/image";
+// import Image from "next/image";
 
 export function FloatingDockMenu() {
   const links = [
     {
-      title: "Home",
+      title: "Shop",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-
-    {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconShoppingCart className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
@@ -37,13 +26,7 @@ export function FloatingDockMenu() {
       ),
       href: "#",
     },
-    {
-      title: "Aceternity UI",
-      icon: (
-        <Image src={PlantLogo} width={20} height={20} alt="Aceternity Logo" />
-      ),
-      href: "#",
-    },
+
     {
       title: "Changelog",
       icon: (
@@ -56,13 +39,6 @@ export function FloatingDockMenu() {
       title: "Twitter",
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
