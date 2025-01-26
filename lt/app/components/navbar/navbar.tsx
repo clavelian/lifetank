@@ -3,17 +3,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/ltph.png";
-import Plant from "@/public/plant.svg";
+// import Plant from "@/public/plant.svg";
 import { NavMenu } from "./navmenu";
 
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+// import {
+//   Sheet,
+//   SheetContent,
+//   SheetDescription,
+//   SheetHeader,
+//   SheetTitle,
+//   SheetTrigger,
+// } from "@/components/ui/sheet";
 
 const ResponsiveNavbar = () => {
   return (
@@ -39,24 +39,23 @@ const ResponsiveNavbar = () => {
         <Image
           src={Logo}
           alt="Logo"
-          width={80}
-          height={80}
-          className="absolute top-5 mobile:left-[3.5rem] wscreen:hidden smscreen:hidden tablet:hidden"
+          width={75}
+          height={75}
+          className="absolute top-7 mobile:left-[2.5rem] wscreen:hidden smscreen:hidden tablet:hidden"
         />
       </Link>
       {/* tablet */}
-
       <NavMenu />
 
       {/* For Mobile Users / small screen */}
-      <Sheet>
+      {/* <Sheet>
         <SheetTrigger>
           <Image
             src={Plant}
             alt="plant"
             height={25}
             width={25}
-            className="absolute top-6 ml-0 right-16 cursor-pointer exclude:hidden flex"
+            className="absolute top-[1.6rem] ml-0 right-20 cursor-pointer exclude:hidden flex"
           />
         </SheetTrigger>
 
@@ -78,13 +77,13 @@ const ResponsiveNavbar = () => {
                   </Link>
                   <strong className="font-semibold py-8 flex justify-center">
                     ᴄᴏɴᴛᴀᴄᴛ
-                  </strong>
+                  </strong>f
                 </span>
               </>
             </SheetDescription>
           </SheetHeader>
         </SheetContent>
-      </Sheet>
+      </Sheet> */}
     </nav>
   );
 };
