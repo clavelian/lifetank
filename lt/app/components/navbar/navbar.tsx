@@ -3,17 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/ltph.png";
-// import Plant from "@/public/plant.svg";
 import { NavMenu } from "./navmenu";
-
-// import {
-//   Sheet,
-//   SheetContent,
-//   SheetDescription,
-//   SheetHeader,
-//   SheetTitle,
-//   SheetTrigger,
-// } from "@/components/ui/sheet";
 
 const ResponsiveNavbar = () => {
   return (
@@ -46,44 +36,6 @@ const ResponsiveNavbar = () => {
       </Link>
       {/* tablet */}
       <NavMenu />
-      <span className="exclude:hidden absolute right-[4rem] top-[1.5rem]"></span>
-      {/* For Mobile Users / small screen */}
-      {/* <Sheet>
-        <SheetTrigger>
-          <Image
-            src={Plant}
-            alt="plant"
-            height={25}
-            width={25}
-            className="absolute top-[1.6rem] ml-0 right-20 cursor-pointer exclude:hidden flex"
-          />
-        </SheetTrigger>
-
-        <SheetContent>
-          <SheetHeader>
-            <SheetTitle></SheetTitle>
-            <SheetDescription className="flex items-center justify-center mobileNav">
-              <>
-                <span className="font-semibold text-3xl py-[13rem]">
-                  <Link href="/">
-                    <strong className="font-semibold py-8 flex justify-center">
-                      ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ
-                    </strong>
-                  </Link>
-                  <Link href="/shop">
-                    <strong className="font-semibold py-8 flex justify-center">
-                      ꜱʜᴏᴘ
-                    </strong>
-                  </Link>
-                  <strong className="font-semibold py-8 flex justify-center">
-                    ᴄᴏɴᴛᴀᴄᴛ
-                  </strong>f
-                </span>
-              </>
-            </SheetDescription>
-          </SheetHeader>
-        </SheetContent>
-      </Sheet> */}
     </nav>
   );
 };
