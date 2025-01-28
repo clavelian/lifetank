@@ -11,7 +11,7 @@ function Hero() {
       </div>
       {/* TODO: sort all breakpoints */}
       <div className="">
-        <span className="hero absolute text-white font-semibold mobile:text-6xl mobile:px-10 mobile:top-[25%] // tablet:top-[30%] tablet:font-extrabold tablet:text-xl">
+        <span className="hero absolute text-white font-extrabold mobile:text-5xl mobile:px-10 mobile:top-[25%] // tablet:top-[30%] tablet:text-6xl tablet:px-6 // top-[35%] text-7xl px-20">
           Bring the serenity of nature to your desk.
         </span>
       </div>

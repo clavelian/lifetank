@@ -13,12 +13,11 @@ export default {
   		mobile: {
   			min: '300px',
   			max: '767px',
-			raw: ''
   		},
   		tablet: {
-			raw: '(max-height: 850px) and (max-width: 530px)',
-  			// min: '768px',
-  			// max: '1024px'
+			// raw: '(max-height: 850px) and (max-width: 530px)',
+  			min: '768px',
+  			max: '1024px'
   		},
   		smscreen: {
   			min: '1025px',
@@ -30,9 +29,12 @@ export default {
   		exclude: {
   			min: '768px'
   		},
-  		zxc: {
-  			raw: '(max-height: 500px) and (max-width: 950px)'
-  		}
+  		mobileL: {
+  			raw: '(max-height: 500px) and (max-width: 950px)',
+  		},
+		smTabletL:{
+			raw: ''
+		},
   	},
   	extend: {
   		colors: {
