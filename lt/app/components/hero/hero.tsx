@@ -1,5 +1,7 @@
 // import { FloatingDockMenu } from "../navbar/floatingDockMenu";
 import ResponsiveNavbar from "@/app/components/navbar/navbar";
+import { ColourfulText } from "./colourful-text";
+// import { motion } from "motion/react";
 
 function Hero() {
   return (
@@ -11,8 +13,9 @@ function Hero() {
       </div>
       {/* TODO: sort all breakpoints */}
       <div className="">
-        <span className="hero absolute text-white font-extrabold mobile:text-5xl mobile:px-10 mobile:top-[25%] // tablet:top-[30%] tablet:text-6xl tablet:px-6 // top-[35%] text-7xl px-20">
-          Bring the serenity of nature to your desk.
+        <span className="hero absolute text-white font-extrabold mobile:text-5xl mobile:px-[2rem] mobile:top-[25%] mobile:left-[2rem] // tablet:top-[30%] tablet:text-6xl tablet:px-[5rem] // top-[35%] text-7xl px-[10rem]">
+          {" "}
+          <ColourfulText text="Bring the serenity of nature to your desk. " />
         </span>
       </div>
       <nav className="absolute w-full top-0">
