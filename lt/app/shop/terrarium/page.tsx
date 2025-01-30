@@ -14,19 +14,19 @@ const Shop = () => {
       </nav>
       <main className="h-[80vh] w-full flex flex-1 justify-center items-center gap-3 px-7">
         {/* ===== wildflower */}
-        <div className="w-full flex mobile:w-[10rem] exclude:w-[20%] mobile:h-[20rem] h-[25rem] relative overflow-hidden group cursor-pointer rounded-md">
+        <div className="w-full flex mobile:w-[10rem] exclude:w-[20%] mobile:h-[15rem] h-[25rem] relative overflow-hidden group cursor-pointer rounded-md">
           {/*  image  */}
           <Image
             src={One}
             alt="one"
-            height={100}
-            width={100}
-            className="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
+            height={1000}
+            width={1000}
+            className="mobile:w-[10rem] mobile:h-[15rem] w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
           />
 
           {/*  text  */}
           <div className="absolute top-[54%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col">
-            <h1 className="text-[1.5rem] font-bold text-white text-center capitalize shopTitle">
+            <h1 className="text-[1.5rem] mobile:text-[.5rem] font-extrabold text-white text-center capitalize shopTitle">
               Wildflower
             </h1>
             <p className="text-center z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 transition-all duration-700 text-white text-[0.9rem] pb-3">
@@ -44,7 +44,7 @@ const Shop = () => {
           <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0"></div>
         </div>
         {/* ===== bonsai */}
-        <div className="w-full mobile:w-[10rem] exclude:w-[20%] mobile:h-[20rem] h-[25rem] relative overflow-hidden group cursor-pointer rounded-md">
+        <div className="w-full flex mobile:w-[10rem] exclude:w-[20%] mobile:h-[15rem] h-[25rem] relative overflow-hidden group cursor-pointer rounded-md">
           {/*  image  */}
           <Image
             src={Two}
@@ -56,7 +56,7 @@ const Shop = () => {
 
           {/*  text  */}
           <div className="absolute top-[54%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col">
-            <h1 className="text-[1.5rem] font-bold text-white text-center capitalize shopTitle">
+            <h1 className="text-[1.5rem] mobile:text-[.5rem] font-extrabold text-white text-center capitalize shopTitle">
               Bonsai
             </h1>
             <p className="text-center z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 transition-all duration-700 text-white text-[0.9rem] pb-3">
@@ -75,7 +75,7 @@ const Shop = () => {
         </div>
 
         {/* mountainscape */}
-        <div className="w-full mobile:w-[10rem] exclude:w-[20%] mobile:h-[20rem] h-[25rem] relative overflow-hidden group cursor-pointer rounded-md">
+        <div className="w-full flex mobile:w-[10rem] exclude:w-[20%] mobile:h-[15rem] h-[25rem] relative overflow-hidden group cursor-pointer rounded-md">
           {/*  image  */}
           <Image
             src={Three}
@@ -87,7 +87,7 @@ const Shop = () => {
 
           {/*  text  */}
           <div className="absolute top-[54%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col">
-            <h1 className="text-[1.5rem] mobile:text-[.5rem] font-bold text-white text-center capitalize shopTitle">
+            <h1 className="text-[1.5rem] mobile:text-[.5rem] font-extrabold text-white text-center capitalize shopTitle">
               Mountainscape
             </h1>
             <p className="text-center z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 transition-all duration-700 text-white text-[0.9rem] pb-3">
