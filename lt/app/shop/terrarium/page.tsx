@@ -12,15 +12,15 @@ const Shop = () => {
       <nav>
         <ResponsiveNavbar />
       </nav>
-      <main className="h-[80vh] w-full flex justify-center items-center gap-8">
+      <main className="h-[80vh] w-full flex flex-1 justify-center items-center gap-3 px-7">
         {/* ===== wildflower */}
-        <div className="w-full mobile:w-[10rem] exclude:w-[20%] mobile:h-[20rem] h-[25rem] relative overflow-hidden group cursor-pointer rounded-md">
+        <div className="w-full flex mobile:w-[10rem] exclude:w-[20%] mobile:h-[20rem] h-[25rem] relative overflow-hidden group cursor-pointer rounded-md">
           {/*  image  */}
           <Image
             src={One}
             alt="one"
-            height={1000}
-            width={1000}
+            height={100}
+            width={100}
             className="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
           />
 
@@ -57,7 +57,7 @@ const Shop = () => {
           {/*  text  */}
           <div className="absolute top-[54%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col">
             <h1 className="text-[1.5rem] font-bold text-white text-center capitalize shopTitle">
-              Wildflower
+              Bonsai
             </h1>
             <p className="text-center z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 transition-all duration-700 text-white text-[0.9rem] pb-3">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -87,8 +87,8 @@ const Shop = () => {
 
           {/*  text  */}
           <div className="absolute top-[54%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col">
-            <h1 className="text-[1.5rem] font-bold text-white text-center capitalize shopTitle">
-              Wildflower
+            <h1 className="text-[1.5rem] mobile:text-[.5rem] font-bold text-white text-center capitalize shopTitle">
+              Mountainscape
             </h1>
             <p className="text-center z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 transition-all duration-700 text-white text-[0.9rem] pb-3">
               Lorem Ipsum is simply dummy text of the printing and typesetting
