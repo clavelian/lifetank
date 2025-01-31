@@ -46,7 +46,7 @@ export function NavMenu() {
               ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid gap-3 p-4 tablet:w-[400px] smscreen:w-[500px] smscreen:grid-cols-[.75fr_1fr]">
+              <ul className="grid gap-3 p-4 tablet:w-[400px] smscreen:w-[600px] smscreen:grid-cols-1">
                 <ListItem href="/gallery" title="Gallery">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Temporibus.
