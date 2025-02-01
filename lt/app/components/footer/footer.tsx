@@ -2,6 +2,7 @@ import { FloatingDockMenu } from "./floatingDockMenu";
 import Image from "next/image";
 import FB from "@/public/fb.svg";
 import IG from "@/public/ig.svg";
+import Link from "next/link";
 
 const ResponsiveFooter = () => {
   return (
@@ -10,10 +11,26 @@ const ResponsiveFooter = () => {
         <FloatingDockMenu />
       </span>
       <div className="pt-[20px] flex items-center w-full flex-wrap gap-[1.2rem] justify-center">
-        <p className="text-[0.8rem] mobile:text-[.7rem] text-gray-400 flex items-center justify-center">
+        <p className="text-[0.8rem] mobile:text-[.7rem] text-gray-400 flex items-center justify-center gap-x-4">
           © 2025 Lifetanks PH. All Rights Reserved.
-          <Image src={FB} alt="fb" />
-          <Image src={IG} alt="ig" />
+          <Link>
+            <Image
+              src={FB}
+              alt="fb"
+              height={25}
+              width={25}
+              className="mobile:hidden"
+            />
+          </Link>
+          <Link>
+            <Image
+              src={IG}
+              alt="ig"
+              height={30}
+              width={30}
+              className="mobile:hidden"
+            />
+          </Link>
         </p>
       </div>
     </footer>
