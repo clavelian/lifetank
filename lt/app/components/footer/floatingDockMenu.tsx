@@ -46,7 +46,7 @@ export function FloatingDockMenu() {
   return (
     <div className="flex items-center justify-center w-full">
       <FloatingDock
-        mobileClassName="" // only for demo, remove for production
+        mobileClassName="space-y-2" // only for demo, remove for production
         items={links}
       />
     </div>

@@ -43,7 +43,8 @@ const FloatingDockMobile = ({
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2"
+            className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-4"
+            //controls the submenu for floating dock
           >
             {items.map((item, idx) => (
               <motion.div
@@ -65,9 +66,11 @@ const FloatingDockMobile = ({
                 <Link
                   href={item.href}
                   key={item.title}
-                  className="h-10 w-10 rounded-full bg-transparent dark:bg-neutral-900 flex items-center justify-center"
+                  className="h-10 w-10 rounded-full bg-white dark:bg-neutral-900 flex items-center justify-center"
+                  //controls the bg of the submenu
                 >
-                  <div className="h-4 w-4">{item.icon}</div>
+                  <div className="h-5 w-5">{item.icon}</div>
+                  {/* controls the size of the icon */}
                 </Link>
               </motion.div>
             ))}
@@ -77,6 +80,7 @@ const FloatingDockMobile = ({
       <button
         onClick={() => setOpen(!open)}
         className="h-10 w-10 rounded-full bg-transparent dark:bg-neutral-800 flex items-center justify-center"
+        //controls the bg of the primary button for the floating dock
       >
         <Image src={PlantLogo} height={30} width={30} alt="Menu" className="" />
       </button>
