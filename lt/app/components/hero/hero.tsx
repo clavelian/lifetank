@@ -12,8 +12,7 @@ function Hero() {
         </video>
       </div>
       <div className="">
-        <span className="hero absolute text-white font-extrabold mobile:text-5xl mobile:px-[2rem] mobile:top-[25%] mobile:left-[2rem] // tablet:top-[30%] tablet:text-6xl tablet:px-[5rem] // top-[30%] text-7xl px-[10rem] smscreen:px-[20rem] wscreen:px-[30rem]">
-          {" "}
+        <span className="hero absolute text-white font-extrabold mobile:text-5xl mobile:px-[2rem] mobile:top-[25%] mobile:left-[1rem] // tablet:top-[30%] tablet:text-6xl tablet:px-[5rem] // top-[30%] text-7xl px-[10rem] smscreen:px-[20rem] wscreen:px-[30rem]">
           <ColourfulText text="Bring the serenity of nature to your desk. " />
         </span>
       </div>
