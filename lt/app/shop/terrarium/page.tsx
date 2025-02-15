@@ -4,6 +4,12 @@ import Image from "next/image";
 import One from "@/public/1.jpg";
 import Two from "@/public/2.png";
 import Three from "@/public/3.jpg";
+import Four from "@/public/4.png";
+import Five from "@/public/5.jpg";
+import Six from "@/public/6.png";
+import Seven from "@/public/7.jpg";
+import Eight from "@/public/8.jpg";
+import Nine from "@/public/9.jpg";
 import Link from "next/link";
 
 const Shop = () => {
