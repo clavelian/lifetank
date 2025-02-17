@@ -6,9 +6,9 @@ import Two from "@/public/2.png";
 import Three from "@/public/3.jpg";
 import Four from "@/public/4.png";
 import Five from "@/public/5.jpg";
-import Six from "@/public/6.png";
+// import Six from "@/public/6.png"; Betta fish
 import Seven from "@/public/7.jpg";
-// import Eight from "@/public/8.jpg";
+import Eight from "@/public/8.jpg";
 import Nine from "@/public/9.jpg";
 import Ten from "@/public/10.jpg";
 import Eleven from "@/public/11.jpg";
@@ -182,8 +182,8 @@ const Shop = () => {
         <div className="w-full flex mobile:w-[10rem] exclude:w-[20%] mobile:h-[15rem] h-[25rem] relative overflow-hidden group cursor-pointer rounded-md">
           {/*  image  */}
           <Image
-            src={Six}
-            alt="Six"
+            src={Seven}
+            alt="Seven"
             height={1000}
             width={1000}
             className="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
@@ -214,8 +214,8 @@ const Shop = () => {
         <div className="w-full flex mobile:w-[10rem] exclude:w-[20%] mobile:h-[15rem] h-[25rem] relative overflow-hidden group cursor-pointer rounded-md">
           {/*  image  */}
           <Image
-            src={Seven}
-            alt="Seven"
+            src={Eight}
+            alt="Eight"
             height={1000}
             width={1000}
             className="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
