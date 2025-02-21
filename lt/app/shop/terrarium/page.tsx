@@ -42,7 +42,7 @@ const Shop = () => {
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
-            <Link href="/shop/wildflower">
+            <Link href="/shop/terrarium/wildflower">
               <span className="bg-gray-400 z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 hover:bg-gray-500 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
                 View Details
               </span>
@@ -72,7 +72,7 @@ const Shop = () => {
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
-            <Link href="/shop/wildflower">
+            <Link href="/shop/terrarium/bonsai">
               <span className="bg-gray-400 z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 hover:bg-gray-500 transition-all duration-1000 text-white rounded-md text-[0.9rem]">
                 View Details
               </span>
