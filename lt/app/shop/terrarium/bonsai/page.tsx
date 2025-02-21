@@ -2,7 +2,7 @@ import ResponsiveNavbar from "@/app/components/navbar/navbar";
 import ResponsiveFooter from "@/app/components/footer/footer";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Bsai from "@/public/2.jpg";
+import Bsai from "@/public/2.png";
 
 const Bonsai = () => {
   return (
