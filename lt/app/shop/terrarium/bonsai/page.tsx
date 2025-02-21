@@ -1,0 +1,59 @@
+import ResponsiveNavbar from "@/app/components/navbar/navbar";
+import ResponsiveFooter from "@/app/components/footer/footer";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Bsai from "@/public/2.jpg";
+
+const Bonsai = () => {
+  return (
+    <>
+      <nav>
+        <ResponsiveNavbar />
+      </nav>
+      <main className="h-[80vh] w-full flex items-center justify-center mobile:flex-col">
+        <Image
+          src={Bsai}
+          alt="Bonsai"
+          height={500}
+          width={500}
+          className="rounded-xl mobile:hidden tablet:hidden"
+        />
+        <Image
+          src={Bsai}
+          alt="Bonsai"
+          height={400}
+          width={400}
+          className="rounded-xl mobile:hidden smscreen:hidden wscreen:hidden"
+        />
+        <Image
+          src={Bsai}
+          alt="Bonsai"
+          height={300}
+          width={300}
+          className="rounded-xl tablet:hidden  smscreen:hidden wscreen:hidden"
+        />
+        <div className="w-[20rem] pl-5">
+          <div className="font-extrabold text-5xl py-2">WildFlower</div>
+          <div className="text-2xl pb-8">₱ 10,000</div>
+          <div className="">
+            Experience eternal freshness, endless peace, and fantastic colors to
+            make you super relax and creative.
+          </div>
+          <div className="py-8 text-sm font-extralight">
+            W9.6 inch X H11.8 inch X L9.6 inch
+          </div>
+          <div className="">
+            <Button className="font-bold text-md mobile:text-lg mobile:font-extrabold">
+              Shop now
+            </Button>
+          </div>
+        </div>
+      </main>
+      <footer className="mobile:hidden fixed right-0 bottom-0 w-full">
+        <ResponsiveFooter />
+      </footer>
+    </>
+  );
+};
+
+export default Bonsai;
