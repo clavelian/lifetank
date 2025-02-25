@@ -21,7 +21,7 @@ const Shop = () => {
       <nav>
         <ResponsiveNavbar />
       </nav>
-      <main className="h-[80vh] w-full flex flex-1 justify-center items-center gap-3 px-7">
+      <main className="h-[80vh] w-full grid grid-cols-6 justify-center items-center gap-3 px-7">
         {/* ===== wildflower */}
         <div className="w-full flex mobile:w-[10rem] exclude:w-[20%] mobile:h-[15rem] h-[25rem] relative overflow-hidden group cursor-pointer rounded-md">
           {/*  image  */}
