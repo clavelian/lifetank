@@ -35,21 +35,21 @@ export function ContactForm() {
 
   return (
     <>
-      <div className="min-h-[calc(100vh-2rem)] rounded-xl bg-gradient-to-b from-gray-900 to-gray-800 py-10 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-[calc(100vh-2rem)] rounded-xl bg-gradient-to-b from-gray-900 to-gray-800 py-10 px-4 mobile:px-6 exclude:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <ResponsiveNavbar />
             <h2 className="text-base font-semibold leading-7 text-blue-400">
               CONTACT US
             </h2>
-            <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <p className="mt-2 text-4xl font-bold tracking-tight text-white mobile:text-5xl">
               Let&apos;s Solve This Together
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid exclude:grid-cols-2 gap-12 items-start">
             <div className="space-y-10">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 exclude:grid-cols-2 gap-8">
                 {contactInfo.map((item, index) => (
                   <div
                     key={index}
