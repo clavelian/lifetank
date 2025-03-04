@@ -12,7 +12,7 @@ const ResponsiveFooter = () => {
       </span>
       <div className="pt-[20px] flex items-center w-full flex-wrap gap-[1.2rem] justify-center">
         <p className="text-[0.8rem] mobile:text-[.7rem] text-gray-400 flex items-center justify-center gap-x-4">
-          © 2025 Lifetanks PH. All Rights Reserved.
+          © {new Date().getFullYear()} Lifetanks PH. All Rights Reserved.
           <Link href="https://www.facebook.com/profile.php?id=61564929218958">
             <Image
               src={FB}
